@@ -18,6 +18,8 @@
            sync-c="true"
            sync-j="8" />
 
+  <project path="manifests" name="aswild/cm13-oneplus2-manifest" />
+
 <!-- BEGIN CYANOGENMOD -->
   <project path="build" name="CyanogenMod/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
