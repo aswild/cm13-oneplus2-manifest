@@ -7,10 +7,12 @@
            revision="refs/tags/android-6.0.1_r30" />
 
   <remote  name="github"
+           alias="origin"
            fetch="git://github.com"
            review="review.cyanogenmod.org" />
 
   <remote  name="private"
+           alias="origin"
            fetch="ssh://git@github.com" />
 
   <default revision="refs/heads/cm-13.0"
@@ -18,7 +20,7 @@
            sync-c="true"
            sync-j="8" />
 
-  <project path="manifests" name="aswild/cm13-oneplus2-manifest" />
+  <project path="manifests" name="aswild/cm13-oneplus2-manifest" remote="private" />
 
 <!-- BEGIN CYANOGENMOD -->
   <project path="build" name="CyanogenMod/android_build" groups="pdk" >
@@ -515,7 +517,4 @@
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
-
-  <include name="grarak-op2.xml" />
-
 </manifest>
