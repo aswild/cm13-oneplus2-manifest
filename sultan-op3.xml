@@ -4,6 +4,9 @@
  <!-- https://raw.githubusercontent.com/sultanxda/android/master/oneplus3/cm-13.0-stable/local_manifest.xml -->
  <include name="default.xml" />
 
+ <!-- WILD ADD -->
+ <project path="manifests" name="aswild/cm13-oneplus2-manifest" revision="cm-13.0-sultan" />
+
  <!--Patcher (run "./patcher/patcher.sh" before each compilation)-->
   <project path="patcher" name="sultanxda/patcher" revision="stable/cm-13.0-oneplus3" />
 
